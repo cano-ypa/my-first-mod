@@ -1,0 +1,8 @@
+# Item
+item.myfirstmod.my_first_item.name=My First Item
+
+# Block
+tile.myfirstmod.my_first_block.name=My First Block
+
+# Creative tab
+itemGroup.myfirstmod=My First Mod

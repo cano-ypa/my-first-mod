@@ -1,16 +1,15 @@
 [
-{
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
+  {
+    "modid": "myfirstmod",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "name": "My First Mod",
+    "description": "My First Mod.",
+    "logoFile": "",
+    "url": "",
+    "authorList": [
+      "canoypa"
+    ],
+    "credits": "The Forge and FML guys, for making this example"
+  }
 ]
