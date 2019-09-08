@@ -3,6 +3,7 @@ item.myfirstmod.my_first_item.name=My First Item
 
 # Block
 tile.myfirstmod.my_first_block.name=My First Block
+tile.myfirstmod.my_first_gui_block.name=My First GUI Block
 
 # Creative tab
 itemGroup.myfirstmod=My First Mod

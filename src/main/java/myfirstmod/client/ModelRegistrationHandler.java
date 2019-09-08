@@ -12,17 +12,25 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
 @EventBusSubscriber(value = Side.CLIENT, modid = MyFirstMod.MODID)
-public class ModelRegistrationHandler {
+public final class ModelRegistrationHandler {
 
   @SubscribeEvent
-  public static void registerModels(ModelRegistryEvent event) {
-    registerModel(MyFirstModItems.MY_FIRST_ITEM, 0);
-
-    registerModel(Item.getItemFromBlock(MyFirstModBlocks.MY_FIRST_BLOCK), 0);
+  public static final void registerModels(ModelRegistryEvent event) {
+    registerBlockModels();
+    registerItemModels();
   }
 
-  private static void registerModel(Item item, int meta) {
+  private static final void registerModel(Item item, int meta) {
     ModelLoader.setCustomModelResourceLocation(item, meta,
         new ModelResourceLocation(item.getRegistryName(), "inventory"));
+  }
+
+  private static final void registerBlockModels() {
+    registerModel(Item.getItemFromBlock(MyFirstModBlocks.MY_FIRST_BLOCK), 0);
+    registerModel(Item.getItemFromBlock(MyFirstModBlocks.MY_FIRST_GUI_BLOCK), 0);
+  }
+
+  private static final void registerItemModels() {
+    registerModel(MyFirstModItems.MY_FIRST_ITEM, 0);
   }
 }
