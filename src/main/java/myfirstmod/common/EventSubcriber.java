@@ -1,5 +1,6 @@
 package myfirstmod.common;
 
+import myfirstmod.blocks.BlockMyFirstGUI;
 import myfirstmod.blocks.BlockMyFirstBlock;
 import myfirstmod.items.ItemMyFirstItem;
 import net.minecraft.block.Block;
@@ -14,7 +15,7 @@ public final class EventSubcriber {
 
   @SubscribeEvent
   public static void registerBlocks(Register<Block> event) {
-    final Block[] blocks = { new BlockMyFirstBlock() };
+    final Block[] blocks = { new BlockMyFirstBlock(), new BlockMyFirstGUI() };
 
     event.getRegistry().registerAll(blocks);
   }
@@ -26,7 +27,9 @@ public final class EventSubcriber {
         new ItemMyFirstItem(),
 
         new ItemBlock(MyFirstModBlocks.MY_FIRST_BLOCK)
-            .setRegistryName(MyFirstModBlocks.MY_FIRST_BLOCK.getRegistryName()) };
+            .setRegistryName(MyFirstModBlocks.MY_FIRST_BLOCK.getRegistryName()),
+        new ItemBlock(MyFirstModBlocks.MY_FIRST_GUI_BLOCK)
+            .setRegistryName(MyFirstModBlocks.MY_FIRST_GUI_BLOCK.getRegistryName()) };
 
     event.getRegistry().registerAll(items);
   }
