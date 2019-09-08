@@ -1,20 +1,25 @@
 package myfirstmod.common;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import myfirstmod.client.ModelRegistrationHandler;
+import myfirstmod.tile.TileMyFirstGui;
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import myfirstmod.tile.TileMyFirstGui;
 
 @Mod(modid = MyFirstMod.MODID, name = MyFirstMod.MODNAME, version = MyFirstMod.MODVERSION, acceptedMinecraftVersions = MyFirstMod.MCVERSION)
 public class MyFirstMod {
@@ -48,6 +53,22 @@ public class MyFirstMod {
 
   @EventHandler
   public void postInit(FMLPostInitializationEvent event) {
+  }
+
+  @SubscribeEvent
+  public static void registerBlocks(Register<Block> event) {
+    MyFirstModBlocks.registerBlocks(event.getRegistry());
+  }
+
+  @SubscribeEvent
+  public static void registerItems(Register<Item> event) {
+    MyFirstModItems.registerItems(event.getRegistry());
+  }
+
+  @SubscribeEvent
+  public static final void registerModels(ModelRegistryEvent event) {
+    ModelRegistrationHandler.registerBlockModels();
+    ModelRegistrationHandler.registerItemModels();
   }
 
 }
