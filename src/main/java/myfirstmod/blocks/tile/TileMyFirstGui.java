@@ -10,17 +10,17 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
 public class TileMyFirstGui extends TileEntity {
-  private ItemStackHandler inventory = new ItemStackHandler(1);
+  private ItemStackHandler itemStackHandler = new ItemStackHandler(9);
 
   @Override
   public void readFromNBT(NBTTagCompound compound) {
-    inventory.deserializeNBT(compound.getCompoundTag("inventory"));
+    itemStackHandler.deserializeNBT(compound.getCompoundTag("inventory"));
     super.readFromNBT(compound);
   }
 
   @Override
   public NBTTagCompound writeToNBT(NBTTagCompound compound) {
-    compound.setTag("inventory", inventory.serializeNBT());
+    compound.setTag("inventory", itemStackHandler.serializeNBT());
     return super.writeToNBT(compound);
   }
 
@@ -33,7 +33,7 @@ public class TileMyFirstGui extends TileEntity {
   @Nullable
   @Override
   public <T> T getCapability(Capability<T> capability, @Nullable EnumFacing facing) {
-    return capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY ? (T) inventory
+    return capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY ? (T) itemStackHandler
         : super.getCapability(capability, facing);
   }
 }
