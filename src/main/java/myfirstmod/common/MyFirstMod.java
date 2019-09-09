@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import myfirstmod.blocks.tile.TileMyFirstGui;
+import myfirstmod.client.CreativeTabMyFirstMod;
 import myfirstmod.client.ModelRegistrationHandler;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
