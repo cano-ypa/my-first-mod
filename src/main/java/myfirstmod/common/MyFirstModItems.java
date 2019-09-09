@@ -1,5 +1,6 @@
 package myfirstmod.common;
 
+import myfirstmod.items.ItemGuiTest;
 import myfirstmod.items.ItemMyFirstItem;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -15,7 +16,8 @@ public class MyFirstModItems {
   public static final void registerItems(IForgeRegistry<Item> registry) {
     final Item[] items = {
 
-        init(new ItemMyFirstItem(), "my_first_item", MyFirstMod.tabMyFirstMod) };
+        init(new ItemMyFirstItem(), "my_first_item", MyFirstMod.tabMyFirstMod),
+        init(new ItemGuiTest(), "gui_test", MyFirstMod.tabMyFirstMod) };
 
     registry.registerAll(items);
   }
