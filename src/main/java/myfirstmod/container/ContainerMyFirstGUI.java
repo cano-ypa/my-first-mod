@@ -10,10 +10,10 @@ import net.minecraftforge.items.IItemHandler;
 
 public class ContainerMyFirstGui extends ContainerBasic {
 
-  public ContainerMyFirstGui(IInventory inventory, TileMyFirstGui tile) {
+  public ContainerMyFirstGui(IInventory inventory, TileMyFirstGui tileNull) {
     super();
 
-    IItemHandler itemHandler = tile.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
+    IItemHandler itemHandler = tileNull.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
 
     addSlots(new MyFirstGuiSlot(itemHandler, 62, 17));
     addSlots(new PlayerInventory(inventory, 8, 84));
