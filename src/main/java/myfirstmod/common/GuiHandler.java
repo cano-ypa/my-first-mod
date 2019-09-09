@@ -2,7 +2,7 @@ package myfirstmod.common;
 
 import myfirstmod.blocks.tile.TileMyFirstGui;
 import myfirstmod.client.gui.GuiMyFirstGui;
-import myfirstmod.container.ContainerMyFirstGUI;
+import myfirstmod.container.ContainerMyFirstGui;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -14,7 +14,7 @@ public class GuiHandler implements IGuiHandler {
 
   @Override
   public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-    return new ContainerMyFirstGUI(player.inventory, (TileMyFirstGui) world.getTileEntity(new BlockPos(x, y, z)));
+    return new ContainerMyFirstGui(player.inventory, (TileMyFirstGui) world.getTileEntity(new BlockPos(x, y, z)));
   }
 
   @Override
