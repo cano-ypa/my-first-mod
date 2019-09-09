@@ -29,6 +29,7 @@ public class BlockMyFirstGUI extends BlockBasicContainer {
         player.openGui(MyFirstMod.instance, GuiHandler.MY_FIRST_GUI, world, pos.getX(), pos.getY(), pos.getZ());
       }
     }
+
     return true;
   }
 
@@ -36,11 +37,16 @@ public class BlockMyFirstGUI extends BlockBasicContainer {
   public void breakBlock(World world, BlockPos pos, IBlockState state) {
     TileMyFirstGui te = (TileMyFirstGui) world.getTileEntity(pos);
     IItemHandler itemHandler = te.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
-    ItemStack stack = itemHandler.getStackInSlot(0);
-    if (!stack.isEmpty()) {
-      EntityItem item = new EntityItem(world, pos.getX(), pos.getY(), pos.getZ(), stack);
-      world.spawnEntity(item);
+
+    for (int i = 0; i < itemHandler.getSlots(); i++) {
+      ItemStack stack = itemHandler.getStackInSlot(i);
+
+      if (!stack.isEmpty()) {
+        EntityItem item = new EntityItem(world, pos.getX(), pos.getY(), pos.getZ(), stack);
+        world.spawnEntity(item);
+      }
     }
+
     super.breakBlock(world, pos, state);
   }
 
