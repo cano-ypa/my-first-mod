@@ -14,7 +14,7 @@ public class MyFirstModUtils {
 
     private String prefix;
 
-    ResourceType(String s) {
+    private ResourceType(String s) {
       prefix = s;
     }
 
