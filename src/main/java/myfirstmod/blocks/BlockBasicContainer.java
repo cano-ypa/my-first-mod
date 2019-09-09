@@ -1,6 +1,5 @@
 package myfirstmod.blocks;
 
-import myfirstmod.common.MyFirstMod;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -12,7 +11,6 @@ public abstract class BlockBasicContainer extends BlockContainer {
   protected BlockBasicContainer() {
     super(Material.IRON);
 
-    setCreativeTab(MyFirstMod.tabMyFirstMod);
     setSoundType(SoundType.STONE);
   }
 

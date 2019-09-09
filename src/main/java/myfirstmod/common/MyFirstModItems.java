@@ -1,6 +1,7 @@
 package myfirstmod.common;
 
 import myfirstmod.items.ItemMyFirstItem;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
@@ -14,7 +15,7 @@ public class MyFirstModItems {
   public static final void registerItems(IForgeRegistry<Item> registry) {
     final Item[] items = {
 
-        init(new ItemMyFirstItem(), "my_first_item") };
+        init(new ItemMyFirstItem(), "my_first_item", MyFirstMod.tabMyFirstMod) };
 
     registry.registerAll(items);
   }
@@ -29,9 +30,9 @@ public class MyFirstModItems {
     registry.registerAll(blockItems);
   }
 
-  private static final Item init(Item item, String registryName) {
-    return item.setRegistryName(MyFirstMod.MODID, registryName)
-        .setTranslationKey(MyFirstMod.MODID + "." + registryName);
+  private static final Item init(Item item, String registryName, CreativeTabs tab) {
+    return item.setRegistryName(MyFirstMod.MODID, registryName).setTranslationKey(MyFirstMod.MODID + "." + registryName)
+        .setCreativeTab(tab);
   }
 
 }
