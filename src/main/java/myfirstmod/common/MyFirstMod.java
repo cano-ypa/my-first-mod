@@ -22,6 +22,7 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = MyFirstMod.MODID, name = MyFirstMod.MODNAME, version = MyFirstMod.MODVERSION, acceptedMinecraftVersions = MyFirstMod.MCVERSION)
+@Mod.EventBusSubscriber()
 public class MyFirstMod {
 
   public static final String MODID = "myfirstmod";
@@ -63,6 +64,7 @@ public class MyFirstMod {
   @SubscribeEvent
   public static void registerItems(Register<Item> event) {
     MyFirstModItems.registerItems(event.getRegistry());
+    MyFirstModItems.registerItemBlocks(event.getRegistry());
   }
 
   @SubscribeEvent
