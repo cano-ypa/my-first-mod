@@ -5,6 +5,7 @@ import myfirstmod.container.ContainerMyFirstGui;
 import myfirstmod.util.MyFirstModUtils;
 import myfirstmod.util.MyFirstModUtils.ResourceType;
 import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.inventory.IInventory;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -18,7 +19,7 @@ public class GuiMyFirstGui extends GuiContainer {
 
   @Override
   protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-    fontRenderer.drawString("My First GUI", 0, 0, 4210752);
+    fontRenderer.drawString(I18n.format("container.inventory"), 0, 0, 0x404040);
   }
 
   @Override
