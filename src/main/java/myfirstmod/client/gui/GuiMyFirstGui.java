@@ -1,7 +1,7 @@
 package myfirstmod.client.gui;
 
 import myfirstmod.blocks.tile.TileMyFirstGui;
-import myfirstmod.gui.MyFirstGUI;
+import myfirstmod.container.MyFirstGUI;
 import myfirstmod.util.MyFirstModUtils;
 import myfirstmod.util.MyFirstModUtils.ResourceType;
 import net.minecraft.client.gui.inventory.GuiContainer;

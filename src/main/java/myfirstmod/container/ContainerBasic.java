@@ -1,6 +1,6 @@
-package myfirstmod.gui;
+package myfirstmod.container;
 
-import myfirstmod.gui.slots.SlotList;
+import myfirstmod.container.slots.SlotList;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
