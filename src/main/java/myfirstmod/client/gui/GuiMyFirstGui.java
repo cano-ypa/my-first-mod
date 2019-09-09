@@ -1,7 +1,7 @@
 package myfirstmod.client.gui;
 
 import myfirstmod.blocks.tile.TileMyFirstGui;
-import myfirstmod.container.ContainerMyFirstGUI;
+import myfirstmod.container.ContainerMyFirstGui;
 import myfirstmod.util.MyFirstModUtils;
 import myfirstmod.util.MyFirstModUtils.ResourceType;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -13,7 +13,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class GuiMyFirstGui extends GuiContainer {
 
   public GuiMyFirstGui(IInventory inventory, TileMyFirstGui tile) {
-    super(new ContainerMyFirstGUI(inventory, tile));
+    super(new ContainerMyFirstGui(inventory, tile));
   }
 
   @Override

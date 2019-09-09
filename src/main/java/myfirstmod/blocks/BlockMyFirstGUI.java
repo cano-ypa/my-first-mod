@@ -15,9 +15,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 
-public class BlockMyFirstGUI extends BlockBasicContainer {
+public class BlockMyFirstGui extends BlockBasicContainer {
 
-  public BlockMyFirstGUI() {
+  public BlockMyFirstGui() {
     super();
   }
 

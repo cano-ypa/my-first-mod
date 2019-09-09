@@ -1,7 +1,7 @@
 package myfirstmod.common;
 
 import myfirstmod.blocks.BlockMyFirstBlock;
-import myfirstmod.blocks.BlockMyFirstGUI;
+import myfirstmod.blocks.BlockMyFirstGui;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
@@ -15,7 +15,7 @@ public class MyFirstModBlocks {
 
   public static final void registerBlocks(IForgeRegistry<Block> registry) {
     final Block[] blocks = { init(new BlockMyFirstBlock(), "my_first_block", MyFirstMod.tabMyFirstMod),
-        init(new BlockMyFirstGUI(), "my_first_gui_block", MyFirstMod.tabMyFirstMod) };
+        init(new BlockMyFirstGui(), "my_first_gui_block", MyFirstMod.tabMyFirstMod) };
 
     registry.registerAll(blocks);
   }
