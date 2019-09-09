@@ -23,8 +23,9 @@ public class GuiMyFirstGui extends GuiContainer {
 
   @Override
   protected void drawGuiContainerBackgroundLayer(float arg0, int arg1, int arg2) {
+    this.drawDefaultBackground();
     this.mc.getTextureManager().bindTexture(MyFirstModUtils.getResource(ResourceType.GUI, "my_first_gui.png"));
     this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, 176, 166);
   }
-  
+
 }
