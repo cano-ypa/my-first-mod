@@ -1,4 +1,4 @@
-package myfirstmod.gui.slots;
+package myfirstmod.container.slots;
 
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;

@@ -1,4 +1,4 @@
-package myfirstmod.gui.slots;
+package myfirstmod.container.slots;
 
 import java.util.ArrayList;
 import java.util.List;

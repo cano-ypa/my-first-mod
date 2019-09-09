@@ -1,8 +1,8 @@
-package myfirstmod.gui;
+package myfirstmod.container;
 
 import myfirstmod.blocks.tile.TileMyFirstGui;
-import myfirstmod.gui.slots.MyFirstGUISlot;
-import myfirstmod.gui.slots.PlayerInventory;
+import myfirstmod.container.slots.MyFirstGUISlot;
+import myfirstmod.container.slots.PlayerInventory;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.util.EnumFacing;
 import net.minecraftforge.items.CapabilityItemHandler;
