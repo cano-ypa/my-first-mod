@@ -24,10 +24,8 @@ public class BlockMyFirstGUI extends BlockBasicContainer {
   @Override
   public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand,
       EnumFacing side, float hitX, float hitY, float hitZ) {
-    if (!world.isRemote) {
-      if (!player.isSneaking()) {
-        player.openGui(MyFirstMod.instance, GuiHandler.MY_FIRST_GUI, world, pos.getX(), pos.getY(), pos.getZ());
-      }
+    if (!world.isRemote && !player.isSneaking()) {
+      player.openGui(MyFirstMod.instance, GuiHandler.MY_FIRST_GUI, world, pos.getX(), pos.getY(), pos.getZ());
     }
 
     return true;
