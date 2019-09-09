@@ -1,6 +1,7 @@
-package myfirstmod.gui;
+package myfirstmod.client.gui;
 
 import myfirstmod.blocks.tile.TileMyFirstGui;
+import myfirstmod.gui.MyFirstGUI;
 import myfirstmod.util.MyFirstModUtils;
 import myfirstmod.util.MyFirstModUtils.ResourceType;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -25,4 +26,5 @@ public class GuiMyFirstGui extends GuiContainer {
     this.mc.getTextureManager().bindTexture(MyFirstModUtils.getResource(ResourceType.GUI, "my_first_gui.png"));
     this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, 176, 166);
   }
+  
 }

@@ -1,5 +1,6 @@
-package myfirstmod.common;
+package myfirstmod.client;
 
+import myfirstmod.common.MyFirstModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
