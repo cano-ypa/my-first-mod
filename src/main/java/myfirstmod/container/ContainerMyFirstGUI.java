@@ -8,9 +8,9 @@ import net.minecraft.util.EnumFacing;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 
-public class MyFirstGUI extends ContainerBasic {
+public class ContainerMyFirstGUI extends ContainerBasic {
 
-  public MyFirstGUI(IInventory inventory, TileMyFirstGui tile) {
+  public ContainerMyFirstGUI(IInventory inventory, TileMyFirstGui tile) {
     super();
 
     IItemHandler itemHandler = tile.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
