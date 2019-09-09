@@ -14,14 +14,19 @@ public class MyFirstModItems {
   public static final void registerItems(IForgeRegistry<Item> registry) {
     final Item[] items = {
 
-        new ItemMyFirstItem(),
+        new ItemMyFirstItem() };
 
+    registry.registerAll(items);
+  }
+
+  public static final void registerItemBlocks(IForgeRegistry<Item> registry) {
+    final Item[] blockItems = {
         new ItemBlock(MyFirstModBlocks.MY_FIRST_BLOCK)
             .setRegistryName(MyFirstModBlocks.MY_FIRST_BLOCK.getRegistryName()),
         new ItemBlock(MyFirstModBlocks.MY_FIRST_GUI_BLOCK)
             .setRegistryName(MyFirstModBlocks.MY_FIRST_GUI_BLOCK.getRegistryName()) };
 
-    registry.registerAll(items);
+    registry.registerAll(blockItems);
   }
 
 }
