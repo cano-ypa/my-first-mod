@@ -3,8 +3,8 @@ package myfirstmod.common;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import myfirstmod.blocks.tile.TileMyFirstGui;
 import myfirstmod.client.ModelRegistrationHandler;
-import myfirstmod.tile.TileMyFirstGui;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

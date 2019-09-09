@@ -1,4 +1,4 @@
-package myfirstmod.tile;
+package myfirstmod.blocks.tile;
 
 import javax.annotation.Nullable;
 

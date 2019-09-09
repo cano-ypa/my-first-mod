@@ -1,6 +1,6 @@
 package myfirstmod.gui;
 
-import myfirstmod.tile.TileMyFirstGui;
+import myfirstmod.blocks.tile.TileMyFirstGui;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;

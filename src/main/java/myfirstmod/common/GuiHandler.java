@@ -1,8 +1,8 @@
 package myfirstmod.common;
 
+import myfirstmod.blocks.tile.TileMyFirstGui;
 import myfirstmod.gui.GuiMyFirstGui;
 import myfirstmod.gui.MyFirstGUI;
-import myfirstmod.tile.TileMyFirstGui;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

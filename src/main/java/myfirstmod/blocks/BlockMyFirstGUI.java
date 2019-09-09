@@ -1,8 +1,8 @@
 package myfirstmod.blocks;
 
+import myfirstmod.blocks.tile.TileMyFirstGui;
 import myfirstmod.common.GuiHandler;
 import myfirstmod.common.MyFirstMod;
-import myfirstmod.tile.TileMyFirstGui;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
