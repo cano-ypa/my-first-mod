@@ -9,11 +9,9 @@ import net.minecraft.util.EnumBlockRenderType;
 
 public abstract class BlockBasicContainer extends BlockContainer {
 
-  protected BlockBasicContainer(String name) {
+  protected BlockBasicContainer() {
     super(Material.IRON);
 
-    setRegistryName(MyFirstMod.MODID, name);
-    setTranslationKey(MyFirstMod.MODID + "." + name);
     setCreativeTab(MyFirstMod.tabMyFirstMod);
     setSoundType(SoundType.STONE);
   }

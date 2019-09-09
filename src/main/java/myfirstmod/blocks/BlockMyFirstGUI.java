@@ -18,7 +18,7 @@ import net.minecraftforge.items.IItemHandler;
 public class BlockMyFirstGUI extends BlockBasicContainer {
 
   public BlockMyFirstGUI() {
-    super("my_first_gui_block");
+    super();
   }
 
   @Override
