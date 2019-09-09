@@ -6,12 +6,12 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
 public class BlockBasic extends Block {
-  protected BlockBasic(String name) {
+
+  protected BlockBasic() {
     super(Material.IRON);
 
-    setRegistryName(MyFirstMod.MODID, name);
-    setTranslationKey(MyFirstMod.MODID + "." + name);
     setCreativeTab(MyFirstMod.tabMyFirstMod);
     setSoundType(SoundType.STONE);
   }
+
 }

@@ -14,7 +14,7 @@ public class MyFirstModItems {
   public static final void registerItems(IForgeRegistry<Item> registry) {
     final Item[] items = {
 
-        new ItemMyFirstItem() };
+        init(new ItemMyFirstItem(), "my_first_item") };
 
     registry.registerAll(items);
   }
@@ -27,6 +27,11 @@ public class MyFirstModItems {
             .setRegistryName(MyFirstModBlocks.MY_FIRST_GUI_BLOCK.getRegistryName()) };
 
     registry.registerAll(blockItems);
+  }
+
+  private static final Item init(Item item, String registryName) {
+    return item.setRegistryName(MyFirstMod.MODID, registryName)
+        .setTranslationKey(MyFirstMod.MODID + "." + registryName);
   }
 
 }
