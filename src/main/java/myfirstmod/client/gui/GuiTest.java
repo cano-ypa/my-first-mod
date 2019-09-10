@@ -13,8 +13,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class GuiTest extends GuiContainer {
 
-  public GuiTest(IInventory inventory, TileNull tileNull) {
-    super(new ContainerNull(inventory, tileNull));
+  public GuiTest(IInventory inventory, TileNull tile) {
+    super(new ContainerNull(inventory, tile));
   }
 
   @Override
