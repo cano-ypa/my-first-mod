@@ -22,7 +22,7 @@ public class GuiHandler implements IGuiHandler {
     case MY_FIRST_GUI:
       return new ContainerMyFirstGui(player.inventory, (TileMyFirstGui) world.getTileEntity(new BlockPos(x, y, z)));
     case GUI_TEST:
-      return new ContainerNull(player.inventory, (TileNull) world.getTileEntity(new BlockPos(x, y, z)));
+      return new ContainerNull();
     }
 
     return null;
