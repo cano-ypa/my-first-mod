@@ -6,7 +6,7 @@ import net.minecraft.util.ResourceLocation;
 public class MyFirstModUtils {
 
   public static ResourceLocation getResource(ResourceType type, String name) {
-    return new ResourceLocation(MyFirstMod.MODID, type.get() + name);
+    return new ResourceLocation(MyFirstMod.MODID, type.get() + name + ".png");
   }
 
   public static enum ResourceType {
