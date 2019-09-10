@@ -5,7 +5,7 @@ import net.minecraft.inventory.IInventory;
 
 public class ContainerNull extends ContainerBasic {
 
-  public ContainerNull(IInventory inventory, TileNull tileNull) {
+  public ContainerNull(IInventory inventory, TileNull tile) {
     super();
   }
 
