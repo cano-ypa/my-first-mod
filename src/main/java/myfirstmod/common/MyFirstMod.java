@@ -23,21 +23,16 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = MyFirstMod.MODID, name = MyFirstMod.MODNAME, version = MyFirstMod.MODVERSION, acceptedMinecraftVersions = MyFirstMod.MCVERSION)
+@Mod(modid = ModInfo.MODID, name = ModInfo.MODNAME, version = ModInfo.MODVERSION, acceptedMinecraftVersions = ModInfo.MCVERSION)
 @EventBusSubscriber()
 public class MyFirstMod {
 
-  public static final String MODID = "myfirstmod";
-  public static final String MODNAME = "My First Mod";
-  public static final String MODVERSION = "0.0.1";
-  public static final String MCVERSION = "[1.12.2]";
-
   public static final CreativeTabs tabMyFirstMod = new CreativeTabMyFirstMod();
 
-  @Instance(MODID)
+  @Instance(ModInfo.MODID)
   public static MyFirstMod instance;
 
-  public static final Logger logger = LogManager.getLogger(MODNAME);
+  public static final Logger logger = LogManager.getLogger(ModInfo.MODNAME);
 
   @EventHandler
   public void preInit(FMLPreInitializationEvent event) {
