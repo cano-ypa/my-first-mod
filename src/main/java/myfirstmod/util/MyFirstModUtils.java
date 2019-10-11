@@ -1,12 +1,12 @@
 package myfirstmod.util;
 
-import myfirstmod.common.MyFirstMod;
+import myfirstmod.common.ModInfo;
 import net.minecraft.util.ResourceLocation;
 
 public class MyFirstModUtils {
 
   public static ResourceLocation getResource(ResourceType type, String name) {
-    return new ResourceLocation(MyFirstMod.MODID, type.get() + name + ".png");
+    return new ResourceLocation(ModInfo.MODID, type.get() + name + ".png");
   }
 
   public static enum ResourceType {
