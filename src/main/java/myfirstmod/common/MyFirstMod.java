@@ -23,7 +23,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = ModInfo.MODID, name = ModInfo.MODNAME, version = ModInfo.MODVERSION, acceptedMinecraftVersions = ModInfo.MCVERSION)
+@Mod(modid = ModInfo.MODID, name = ModInfo.MODNAME, version = ModInfo.MODVERSION, guiFactory = ModInfo.GUIFACTORY, acceptedMinecraftVersions = ModInfo.MCVERSION)
 @EventBusSubscriber()
 public class MyFirstMod {
 
