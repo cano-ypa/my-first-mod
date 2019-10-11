@@ -7,7 +7,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.registries.IForgeRegistry;
 
-@ObjectHolder(MyFirstMod.MODID)
+@ObjectHolder(ModInfo.MODID)
 public class MyFirstModBlocks {
 
   public static final Block MY_FIRST_BLOCK = null;
@@ -21,8 +21,8 @@ public class MyFirstModBlocks {
   }
 
   private static final Block init(Block block, String registryName, CreativeTabs tab) {
-    return block.setRegistryName(MyFirstMod.MODID, registryName)
-        .setTranslationKey(MyFirstMod.MODID + "." + registryName).setCreativeTab(tab);
+    return block.setRegistryName(ModInfo.MODID, registryName).setTranslationKey(ModInfo.MODID + "." + registryName)
+        .setCreativeTab(tab);
   };
 
 }

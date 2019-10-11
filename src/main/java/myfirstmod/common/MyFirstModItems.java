@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.registries.IForgeRegistry;
 
-@ObjectHolder(MyFirstMod.MODID)
+@ObjectHolder(ModInfo.MODID)
 public class MyFirstModItems {
 
   public static final Item MY_FIRST_ITEM = null;
@@ -33,7 +33,7 @@ public class MyFirstModItems {
   }
 
   private static final Item init(Item item, String registryName, CreativeTabs tab) {
-    return item.setRegistryName(MyFirstMod.MODID, registryName).setTranslationKey(MyFirstMod.MODID + "." + registryName)
+    return item.setRegistryName(ModInfo.MODID, registryName).setTranslationKey(ModInfo.MODID + "." + registryName)
         .setCreativeTab(tab);
   }
 
