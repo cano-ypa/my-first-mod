@@ -17,6 +17,11 @@ public class GuiMyFirstGui extends GuiContainer {
     super(new ContainerMyFirstGui(inventory, tile));
   }
 
+  public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+    super.drawScreen(mouseX, mouseY, partialTicks);
+    this.renderHoveredToolTip(mouseX, mouseY);
+  }
+
   @Override
   protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
     fontRenderer.drawString(I18n.format("container.inventory"), 0, 0, 0x404040);
