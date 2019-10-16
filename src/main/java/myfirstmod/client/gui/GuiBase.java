@@ -7,7 +7,7 @@ import net.minecraft.client.gui.GuiScreen;
 
 public class GuiBase extends GuiScreen {
 
-  public ArrayList<GuiElement> elements = ArrayList<GuiElement>();
+  public ArrayList<GuiElement> elements = new ArrayList<GuiElement>();
 
   public GuiBase() {
   }
@@ -22,7 +22,7 @@ public class GuiBase extends GuiScreen {
     super.drawScreen(mouseX, mouseY, partialTicks);
   }
 
-  public addGuiElement(GuiElement element){
+  public void addGuiElement(GuiElement element) {
     this.elements.add(element);
   }
 
