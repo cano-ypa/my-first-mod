@@ -1,6 +1,6 @@
 package myfirstmod.client.gui.element;
 
-public class GuiElement {
+public abstract class GuiElement {
 
   public GuiElement() {
   }
