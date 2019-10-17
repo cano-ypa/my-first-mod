@@ -5,4 +5,6 @@ public abstract class GuiElement {
   public GuiElement() {
   }
 
+  public abstract void draw();
+
 }
