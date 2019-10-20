@@ -1,7 +1,7 @@
 package myfirstmod.client.gui.element;
 
+import myfirstmod.client.gui.GuiBase;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.Gui;
 import net.minecraft.util.ResourceLocation;
 
 public abstract class GuiElement {
@@ -14,6 +14,6 @@ public abstract class GuiElement {
     this.RESOURCE = resource;
   }
 
-  public abstract void draw(Gui gui);
+  public abstract void draw(GuiBase gui);
 
 }
