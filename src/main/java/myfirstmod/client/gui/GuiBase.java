@@ -21,7 +21,7 @@ public class GuiBase extends GuiScreen {
   public void drawScreen(int mouseX, int mouseY, float partialTicks) {
     super.drawScreen(mouseX, mouseY, partialTicks);
 
-    this.elements.forEach((GuiElement element) -> element.draw());
+    this.elements.forEach((GuiElement element) -> element.draw(this));
   }
 
   public void addGuiElement(GuiElement element) {

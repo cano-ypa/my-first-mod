@@ -1,5 +1,9 @@
 package myfirstmod.client.gui.element;
 
+import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.gui.Gui;
+import net.minecraft.util.ResourceLocation;
+
 public class GuiButtonElement extends GuiElement {
 
   private String text;
@@ -9,6 +13,8 @@ public class GuiButtonElement extends GuiElement {
   private int height = 20;
 
   public GuiButtonElement(String text, int posX, int posY, int width, int height) {
+    super(new ResourceLocation("textures/gui/widgets.png"));
+
     this.text = text;
     this.posX = posX;
     this.posY = posY;
@@ -16,8 +22,17 @@ public class GuiButtonElement extends GuiElement {
     this.height = height;
   }
 
-  public void draw() {
+  public void draw(Gui gui) {
+    FontRenderer fontrenderer = minecraft.fontRenderer;
 
+    minecraft.renderEngine.bindTexture(this.RESOURCE);
+
+    gui.drawTexturedModalRect(this.posX, this.posY, 0, 46, this.width / 2, this.height);
+    gui.drawTexturedModalRect(this.posX + this.width / 2, this.posY, 200 - this.width / 2, 46, this.width / 2,
+        this.height);
+
+    gui.drawCenteredString(fontrenderer, this.text, this.posX + this.width / 2, this.posY + (this.height - 8) / 2,
+        14737632);
   }
 
 }
