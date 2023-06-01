@@ -29,4 +29,7 @@ public class GuiButtonElement extends GuiElement {
     gui.drawString(this.text, this.posX + this.width / 2, this.posY + (this.height - 8) / 2, 14737632);
   }
 
+  public void onClick() {
+  }
+
 }

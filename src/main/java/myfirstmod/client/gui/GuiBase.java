@@ -1,5 +1,6 @@
 package myfirstmod.client.gui;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import myfirstmod.client.gui.element.GuiElement;
@@ -25,6 +26,11 @@ public class GuiBase extends GuiScreen {
     super.drawScreen(mouseX, mouseY, partialTicks);
 
     this.elements.forEach((GuiElement element) -> element.draw(this));
+  }
+
+  @Override
+  protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
+    this.elements.forEach((GuiElement element) -> element.onClick());
   }
 
   public void addGuiElement(GuiElement element) {

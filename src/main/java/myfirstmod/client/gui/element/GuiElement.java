@@ -16,4 +16,6 @@ public abstract class GuiElement {
 
   public abstract void draw(GuiBase gui);
 
+  public abstract void onClick();
+
 }
